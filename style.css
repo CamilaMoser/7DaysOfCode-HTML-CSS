@@ -4,10 +4,13 @@
     --ciza-principal: #667085;
     --branco-fonte: #FFFFFF;
     --preto-titulo: #000000;
+    --preto-subtitulo: #101828;
+    --font-principal: 'Inter';
 }
 
 body {
     background-color: var(--cor-de-fundo);
+    font-family: var(--font-principal);
     font-size: 16px;
     font-weight: 400;
 }
@@ -103,4 +106,33 @@ body {
     padding-inline: 29%;
     margin-top: 24px;
     font-size: 20px;
+}
+
+.metricas__container {
+    display: flex;
+    justify-content: flex-start;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.metrica {
+    /* padding: 10px; */
+    margin: 96px 60px 96px 80px ;
+}
+
+.metrica__titulo {
+   color: var(--vermelho-secundario);
+   font-weight: 700; 
+   font-size: 60px;
+   margin-bottom: 12px;
+}
+
+.metrica__subtitulo {
+    color: var(--preto-subtitulo);
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.metrica__descricao {
+    color: var(--ciza-principal);
+    font-size: 16px;
 }
