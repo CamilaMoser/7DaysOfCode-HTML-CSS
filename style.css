@@ -1,7 +1,7 @@
 :root {
     --cor-de-fundo: #FFFFFF;
     --vermelho-secundario: #8e2424;
-    --ciza-principal: #667085;
+    --cinza-principal: #667085;
     --branco-fonte: #FFFFFF;
     --preto-titulo: #000000;
     --preto-subtitulo: #101828;
@@ -54,7 +54,7 @@ body {
 
 .lista__nav a {
     text-decoration: none;
-    color: var(--ciza-principal);
+    color: var(--cinza-principal);
     margin-left: 2em;
 }
 
@@ -66,7 +66,7 @@ body {
 
 .container__entrar {
     text-decoration: none;
-    color: var(--ciza-principal);
+    color: var(--cinza-principal);
     margin-right: 2em;
     margin-top: 40px;
 }
@@ -101,7 +101,7 @@ body {
 }
 
 .cabecalho__descricao{
-    color: var(--ciza-principal);
+    color: var(--cinza-principal);
     text-align: center;
     padding-inline: 29%;
     margin-top: 24px;
@@ -133,6 +133,142 @@ body {
 }
 
 .metrica__descricao {
-    color: var(--ciza-principal);
+    color: var(--cinza-principal);
     font-size: 16px;
+}
+
+.talentos__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-template-columns: 25% 25% 50%;
+}
+
+.talentos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 96px;
+    margin-bottom: 64px;
+}
+
+.talentos__titulo {
+    color: var(--vermelho-secundario);
+    background-color: rgb(142,36,36,0.05);
+    text-align: center;
+    border-radius: 10px;
+    padding: 5px 5px;
+    width: 100px;
+    margin: 10px;  
+    height: 18px;   
+    font-weight: 400; 
+    font-size: 13px;
+    margin-bottom: 16px;
+}
+
+.talentos__subtitulo {
+    color: var(--preto-subtitulo);
+    font-weight: 700;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.talentos__descricao {
+    color: var(--cinza-principal);
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.talentos__imagem {
+    margin-bottom: 64px;
+}
+
+.vagas__container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-inline-start: 25%;
+    margin-bottom: 96px;
+}
+
+.vagas__titulo {
+    color: var(--preto-subtitulo);
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 32px;  
+    margin-top: 64px; 
+}
+
+.vaga {
+    background-color: var(--branco-fonte);
+    margin-bottom: 24px;
+    border: 1px solid #EAECF0;
+    border-radius: 10px;
+    width: 758px;
+    padding-bottom: 10px;
+    padding: 30px;
+}
+
+.titulo-vaga {
+    color: var(--preto-titulo);
+    font-size: 18px;
+    padding-inline-start: 2%;
+}
+
+.informacoes {
+    color: var(--cinza-principal);
+    font-size: 16px;
+    padding-inline-start: 2%;
+    margin-top: 5%;
+}
+
+span{
+    padding-right: 20px;
+}
+
+.depoimentos__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.depoimentos {
+    background-color: rgb(195,25,25,0.03);
+    width: 1216px;
+    height: 404px;
+    border-radius: 10px;
+}
+
+.depoimento__titulo {
+    color: var(--vermelho-secundario);
+    text-align: center;
+    margin-top: 64px;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.depoimento__subtitulo {
+    color: var(--preto-subtitulo);
+    text-align: center;
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 32px;
+}
+
+.informacoes__cliente {
+    text-align: center;
+}
+
+.cliente__nome {
+    color: var(--preto-subtitulo);
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 16px;
+    margin-bottom: 10px;
+}
+
+.cliente__emprego {
+    color: var(--cinza-principal);
+    font-size: 14px;
 }
